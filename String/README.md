@@ -1,1 +1,1 @@
-# contains string topic solutions
+# Leetcode - String topic solutions.
