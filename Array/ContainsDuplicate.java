@@ -15,8 +15,8 @@ public class ContainsDuplicate {
         for (int i = 0; i < nums.length; i++) {
             uniques.add(nums[i]);  
         }
-
-        //checks if there is any duplicates & returns the result in boolean
+        
+        //checks if there is any duplicates & returns the boolean
         return uniques.size() != nums.length;
             
     };
