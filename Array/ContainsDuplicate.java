@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,17 +15,14 @@ public class ContainsDuplicate {
         for (int i = 0; i < nums.length; i++) {
             uniques.add(nums[i]);  
         }
-
-        //checks if there is any duplicates
-        if(uniques.size() == nums.length)
-            return false;
-        else
-            return true;
+        //checks if there is any duplicates & returns the boolean
+        return uniques.size() != nums.length;
+            
     };
 
     public static void main(String[] args) {
         ContainsDuplicate Coffee = new ContainsDuplicate();
         int[] num = {1,1,1,3,3,4,3,2,4,2};
-        Coffee.containsDuplicate(num);
+        System.out.print(Coffee.containsDuplicate(num));
     }
 }
