@@ -27,6 +27,6 @@ public class TwoSum {
     public static void main(String[] args) {
         TwoSum Coffee = new TwoSum();
         int[] nums = {2,7,11,15}; //testcase
-        System.out.println(Coffee.twoSum(nums, 9));
+        Coffee.twoSum(nums, 9);
     }
 }
