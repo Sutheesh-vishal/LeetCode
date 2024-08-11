@@ -1,21 +1,20 @@
-package array;
+package Array;
+
+import java.util.HashMap;
 
 
 
 public class TwoSum {
-    public int twoSum(int[] nums, int target) {
-        int index = 0;
-        int pointer = 0;
-        int[] Indexes = new int[2];
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer,Integer> indexes = new HashMap<>();
         for(int i = 0;i<nums.length;i++){
-            if(nums[index]+nums[i]==target){
-                Indexes[pointer]=index;
-                pointer++;
-                
+            int pair = target-nums[i];
+            if(indexes.containsKey(pair)){
+                return new int[]{nums[i],indexes.get(pair)};
             }
-            index++;
+            indexes.put(nums[i],i);
         }
-        return Indexes[0];
+        return new int[]{};
     }
     public static void main(String[] args) {
         TwoSum Coffee = new TwoSum();
