@@ -1,4 +1,4 @@
-package string;
+package String;
 
 public class defangIPaddr {
     public String defangIPaddr(String address) {

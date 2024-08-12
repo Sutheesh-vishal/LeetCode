@@ -1,4 +1,4 @@
-package string;
+package String;
 
 public class finalValueAfterOperations {
         public int finalValueAfterOperations(String[] operations) {
