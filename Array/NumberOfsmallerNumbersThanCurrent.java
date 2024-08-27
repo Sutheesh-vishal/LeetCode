@@ -7,7 +7,6 @@ public class NumberOfsmallerNumbersThanCurrent {
         int[] arr = new int[nums.length];
         for(int i = 0;i<nums.length;i++){
             int count = 0;
-            int max = nums[i];
             for(int j = 0;j<nums.length;j++){
                 if(nums[i]>nums[j]){
                     count++;
@@ -19,7 +18,7 @@ public class NumberOfsmallerNumbersThanCurrent {
     }
     public static void main(String[] args) {
         NumberOfsmallerNumbersThanCurrent Coffee = new NumberOfsmallerNumbersThanCurrent();
-        System.out.println(Coffee.smallerNumbersThanCurrent(new int[]{8,1,2,2,3}));
+        Coffee.smallerNumbersThanCurrent(new int[]{8,1,2,2,3});
     }
     
 }
