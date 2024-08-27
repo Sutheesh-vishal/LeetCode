@@ -2,7 +2,7 @@ package Array;
 
 public class HighestAltitude {
     public int largestAltitude(int[] gain) {
-
+        //Initializing count variable
         int count = 0;
         int alt = 0;
         for(int pts : gain){
